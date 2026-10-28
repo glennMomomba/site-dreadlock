@@ -3,44 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dread & Lock Master - Salon Spécialisé Dreadlocks</title>
-    <meta name="description" content="Salon spécialisé dreadlocks : départ de locks, retwist, réparation et extensions. Réservation en ligne.">
+    <title>Dreadlocks Dakar - Prestations & Soins à Domicile</title>
+    <meta name="description" content="Spécialiste Dreadlocks à domicile à Dakar : départ, retwist, micro locks, sister locks et soins détox.">
     <meta name="theme-color" content="#14100c">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
         <div class="header-left">
-            <button class="menu-toggle" onclick="openSidebar()" aria-label="Ouvrir le menu" aria-controls="sidebar" aria-expanded="false">
+            <button class="menu-toggle" onclick="openSidebar()" aria-label="Ouvrir le menu">
                 <span></span><span></span><span></span>
             </button>
-            <div class="logo" onclick="switchSection('home')"><span class="logo-mark">🌿</span>Dread <em>&</em> Lock</div>
+            <div class="logo" onclick="switchSection('home')"><span class="logo-mark">🌿</span>Dreadlocks <em>Dakar</em></div>
         </div>
         <div class="header-right">
-            <a class="header-phone" href="tel:+212600000000">📞 06 00 00 00 00</a>
-            <button class="header-cta" onclick="switchSection('booking')">Prendre RDV</button>
+            <a class="header-phone" href="https://wa.me/221784592249" target="_blank" rel="noopener">💬 WhatsApp : +221 78 459 22 49</a>
+            <button class="header-cta" onclick="switchSection('booking')">Réserver à Domicile</button>
         </div>
     </header>
 
-    <!-- MENU LATÉRAL DYNAMIQUE (généré en JavaScript) -->
+    <!-- MENU LATÉRAL DYNAMIQUE -->
     <div id="sidebarOverlay" class="sidebar-overlay" onclick="closeSidebar()"></div>
     <aside id="sidebar" class="sidebar" aria-hidden="true">
         <div class="sidebar-header">
-            <div class="logo" onclick="switchSection('home')"><span class="logo-mark">🌿</span>Dread <em>&</em> Lock</div>
+            <div class="logo" onclick="switchSection('home')"><span class="logo-mark">🌿</span>Dreadlocks <em>Dakar</em></div>
             <button class="sidebar-close" onclick="closeSidebar()" aria-label="Fermer le menu">&times;</button>
         </div>
         <nav id="sidebarNav"></nav>
         <div class="sidebar-footer">
-            <span id="sidebarStatus" class="open-status"></span>
-            <strong>Salon spécialisé dreadlocks</strong>
-            <span>📞 06 00 00 00 00</span>
+            <span id="sidebarStatus" class="open-status">● Service disponible</span>
+            <strong>Prestations exclusivement à domicile</strong>
+            <span>📞 +221 78 459 22 49</span>
         </div>
     </aside>
 
@@ -50,205 +49,184 @@
         <section id="home" class="section active">
             <div class="hero">
                 <div class="hero-text">
-                    <div class="hero-badge"><span>●</span> Salon 100 % spécialisé locks</div>
-                    <h1>L'art des <em>dreadlocks</em>, à votre image.</h1>
-                    <p>Création, entretien, départ de locks et réparations professionnelles. Un travail soigné, respectueux du cheveu et authentique.</p>
+                    <div class="hero-badge"><span>●</span> Service Premium à Domicile • Dakar</div>
+                    <h1>L'expertise des <em>dreadlocks</em> directement chez vous.</h1>
+                    <p>Départ de locks, Micro locks, Sister locks, soins détox et entretien professionnel sur Dakar et environs. Un service sur-mesure sans vous déplacer.</p>
                     <div class="hero-actions">
-                        <button class="btn-primary" onclick="switchSection('booking')">Réserver une prestation</button>
+                        <button class="btn-primary" onclick="switchSection('booking')">Réserver à domicile</button>
                         <button class="btn-ghost" onclick="switchSection('catalogue')">Voir les tarifs</button>
                     </div>
                     <div class="hero-stats">
-                        <div><strong>8+</strong><span>ans d'expérience</span></div>
-                        <div><strong>1 200</strong><span>clients accompagnés</span></div>
-                        <div><strong>4,9★</strong><span>note moyenne</span></div>
+                        <div><strong>100%</strong><span>À Domicile</span></div>
+                        <div><strong>3h à 5h</strong><span>Soin minutieux</span></div>
+                        <div><strong>4,9★</strong><span>Satisfaction clients</span></div>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="img-main">
-                        <img src="https://images.unsplash.com/photo-1584297091622-f0efd7a12668?auto=format&fit=crop&w=900&q=80" alt="Dreadlocks réalisées au salon">
+                        <img src="https://images.unsplash.com/photo-1584297091622-f0efd7a12668?auto=format&fit=crop&w=900&q=80" alt="Dreadlocks Dakar">
                     </div>
                     <div class="img-small">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Détail de locks">
-                    </div>
-                    <div class="hero-floating">
-                        <span style="font-size: 1.6rem;">💬</span>
-                        <div>
-                            <div class="stars">★★★★★</div>
-                            <small>« Un vrai savoir-faire »</small>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Finitions locks">
                     </div>
                 </div>
             </div>
 
+            <!-- SAVOIR FAIRE -->
             <div class="block reveal">
-                <span class="eyebrow">Notre savoir-faire</span>
-                <h2 class="section-title">Des locks qui <em>durent</em>.</h2>
-                <p class="section-lead">Chaque chevelure est unique. On prend le temps de comprendre votre cheveu avant de commencer.</p>
+                <span class="eyebrow">Service à domicile</span>
+                <h2 class="section-title">Comment fonctionne la <em>prestation chez vous</em> ?</h2>
                 <div class="features">
-                    <div class="feature"><span class="num">01</span><h3>Diagnostic</h3><p>Analyse de la texture, de la densité et de vos envies avant chaque prestation.</p></div>
-                    <div class="feature"><span class="num">02</span><h3>Techniques douces</h3><p>Crochet, twist ou palm roll, selon ce qui convient le mieux à votre cheveu.</p></div>
-                    <div class="feature"><span class="num">03</span><h3>Produits naturels</h3><p>Soins sans résidus, adaptés aux locks, pour un cuir chevelu sain.</p></div>
-                    <div class="feature"><span class="num">04</span><h3>Suivi personnalisé</h3><p>Conseils d'entretien et rappels pour garder des locks impeccables.</p></div>
+                    <div class="feature"><span class="num">01</span><h3>Réservation</h3><p>Choisissez la date, votre quartier à Dakar et la prestation souhaitée.</p></div>
+                    <div class="feature"><span class="num">02</span><h3>Devis / Validation</h3><p>Pour les créations, un rapide échange WhatsApp permet de confirmer le temps nécessaire.</p></div>
+                    <div class="feature"><span class="num">03</span><h3>Déplacement</h3><p>Mise en place du matériel directement chez vous dans le confort total.</p></div>
+                    <div class="feature"><span class="num">04</span><h3>Résultat impeccable</h3><p>Finitions soignées et conseils sur-mesure pour préserver votre cuir chevelu.</p></div>
                 </div>
             </div>
 
+            <!-- AVIS CLIENTS DYNAMIQUES -->
             <div class="block reveal">
-                <span class="eyebrow">Ils nous font confiance</span>
-                <h2 class="section-title">Avis <em>clients</em></h2>
+                <span class="eyebrow">Retours d'expérience</span>
+                <h2 class="section-title">Avis <em>clients Dakar</em></h2>
                 <div class="testimonials">
-                    <div class="testimonial"><div class="stars">★★★★★</div><p>Mon départ de locks est parfait, propre et régulier. Très bons conseils pour l'entretien.</p><div class="author"><span class="avatar">S</span>Sofia, Casablanca</div></div>
-                    <div class="testimonial"><div class="stars">★★★★★</div><p>Ils ont réparé des locks que je pensais perdues. Travail minutieux et ambiance au top.</p><div class="author"><span class="avatar">Y</span>Youssef, Rabat</div></div>
-                    <div class="testimonial"><div class="stars">★★★★★</div><p>Je viens tous les deux mois pour le retwist. Ponctuels et toujours de bonne humeur.</p><div class="author"><span class="avatar">M</span>Mariam, Marrakech</div></div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>« Mon départ de locks est parfait, propre et régulier. Très bons conseils pour l'entretien ! »</p>
+                        <div class="author"><span class="avatar">S</span>Sofia, Dakar <span class="badge-count" style="font-size:0.75rem; background:var(--primary-glow); padding:2px 6px; border-radius:10px; margin-left:auto;">Avis certifié</span></div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>« Service à domicile très ponctuel. Les Sister locks ont été faites avec une précision incroyable. Je recommande ! »</p>
+                        <div class="author"><span class="avatar">A</span>Aïssatou, Almadies</div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p>« Le soin détox a sauvé mes locks. Coiffeuse très professionnelle et très douce. »</p>
+                        <div class="author"><span class="avatar">M</span>Mamadou, Plateau</div>
+                    </div>
                 </div>
             </div>
 
             <div class="cta-band reveal">
-                <h2>Prêt·e pour vos <em>nouvelles locks</em> ?</h2>
-                <button class="btn-primary" onclick="switchSection('booking')">Réserver maintenant</button>
+                <h2>Envie de faire vos <em>locks à domicile</em> ?</h2>
+                <button class="btn-primary" onclick="switchSection('booking')">Réserver un créneau</button>
             </div>
         </section>
 
         <!-- 2. SECTION CATALOGUE -->
         <section id="catalogue" class="section">
-            <span class="eyebrow">Prestations</span>
+            <span class="eyebrow">Prestations Dakar</span>
             <h2 class="section-title">Styles <em>&</em> tarifs</h2>
-            <p class="section-lead">Les prix varient selon la longueur et la densité. Un devis précis vous est donné au salon.</p>
-            <div id="catalogueFilters" class="filters"></div>
+            <p class="section-lead">Paiement sur place après la prestation à domicile. Tous les prix sont indiqués en FCFA.</p>
             <div id="catalogueGrid" class="grid"></div>
         </section>
 
-        <!-- 3. SECTION PRISE DE RENDEZ-VOUS -->
+        <!-- 3. SECTION PRISE DE RENDEZ-VOUS & DEVIS -->
         <section id="booking" class="section">
             <div class="booking-layout">
                 <div class="booking-info">
                     <span class="eyebrow">Réservation</span>
-                    <h2 class="section-title">Réservez votre <em>moment</em>.</h2>
-                    <p class="section-lead">Choisissez votre prestation et votre créneau. Le salon vous rappelle pour confirmer.</p>
+                    <h2 class="section-title">Prestation à <em>Domicile</em>.</h2>
+                    <p class="section-lead">En raison de la durée des prestations (3h minimum par RDV), les créneaux sont organisés matin (09h) et après-midi (14h) du Lundi au Dimanche.</p>
                     <ul class="info-list">
-                        <li><span class="icon">🕐</span><div><strong>Horaires</strong><span>Mar – Sam : 10h – 19h · Dim : 11h – 16h</span></div></li>
-                        <li><span class="icon">📍</span><div><strong>Adresse</strong><span>12 rue des Artisans, Casablanca</span></div></li>
-                        <li><span class="icon">📞</span><div><strong>Téléphone</strong><span>06 00 00 00 00</span></div></li>
+                        <li><span class="icon">🕒</span><div><strong>Horaires</strong><span>Lundi – Dimanche : 09h00 – 19h00</span></div></li>
+                        <li><span class="icon">📍</span><div><strong>Zone couverte</strong><span>Dakar & banlieue (Almadies, Plateau, Mermoz, Yoff, Ouakam, etc.)</span></div></li>
+                        <li><span class="icon">💬</span><div><strong>WhatsApp direct</strong><span>+221 78 459 22 49</span></div></li>
                     </ul>
                 </div>
 
                 <div class="form-container">
-                    <h2>Réservation en ligne</h2>
-                    <p>Tous les champs sont obligatoires sauf la remarque.</p>
+                    <h2>Formulaire de réservation</h2>
+                    <p>Renseignez vos coordonnées pour valider le rendez-vous ou demander un devis.</p>
                     <form id="bookingForm" onsubmit="handleBooking(event)" novalidate>
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="clientName">Nom complet</label>
-                                <input type="text" id="clientName" class="form-control" placeholder="Ex : Jean Dupont" autocomplete="name">
+                                <input type="text" id="clientName" class="form-control" placeholder="Ex : Fatou Ndiaye" required>
                                 <div class="field-error">Indiquez votre nom.</div>
                             </div>
                             <div class="form-group">
-                                <label for="clientPhone">Téléphone</label>
-                                <input type="tel" id="clientPhone" class="form-control" placeholder="Ex : 06 00 00 00 00" autocomplete="tel">
-                                <div class="field-error">Numéro de téléphone invalide.</div>
+                                <label for="clientPhone">Téléphone (WhatsApp)</label>
+                                <input type="tel" id="clientPhone" class="form-control" placeholder="Ex : +221 77 000 00 00" required>
+                                <div class="field-error">Numéro de téléphone requis.</div>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label for="clientAddress">Adresse exacte / Quartier à Dakar</label>
+                            <input type="text" id="clientAddress" class="form-control" placeholder="Ex : Mermoz, près de la brioche dorée" required>
+                            <div class="field-error">Veuillez renseigner votre quartier/adresse.</div>
+                        </div>
+
                         <div class="form-group" id="serviceGroup">
                             <label>Prestation souhaitée</label>
                             <div id="servicePicker" class="service-picker"></div>
                             <div class="field-error">Choisissez une prestation.</div>
                         </div>
+
+                        <!-- SECTION DYNAMIQUE DEVIS EXCLUSIF EXTENSIONS / DEPART DE LOCKS -->
+                        <div id="quoteSection" class="form-group" style="display: none; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; border: 1px dashed var(--accent);">
+                            <label style="color: var(--accent); font-weight: bold;">📸 Option Devis personnalisé</label>
+                            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">
+                                Pour la pose d'extensions ou la réparation, le tarif dépend de la longueur des cheveux, de l'épaisseur souhaitée (Micro/Sister) et de la fourniture des meches.
+                            </p>
+                            <input type="file" id="clientPhotos" class="form-control" accept="image/*" multiple style="display:none;" onchange="updateFileLabel(this)">
+                            <button type="button" class="btn-ghost" onclick="document.getElementById('clientPhotos').click()" style="width:100%;">📷 Joindre une photo de vos cheveux</button>
+                            <span id="fileLabel" style="display:block; font-size:0.8rem; margin-top:5px; color:var(--accent);"></span>
+                        </div>
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="clientDate">Date souhaitée</label>
-                                <input type="date" id="clientDate" class="form-control">
-                                <div class="field-error">Choisissez une date à venir (fermé le lundi).</div>
+                                <input type="date" id="clientDate" class="form-control" required>
+                                <div class="field-error">Choisissez une date valide.</div>
                             </div>
                             <div class="form-group" id="slotGroup">
-                                <label>Créneau</label>
-                                <div id="slotPicker" class="slots"></div>
+                                <label>Créneau disponible (Session ~3h)</label>
+                                <div id="slotPicker" class="slots">
+                                    <button type="button" class="slot-btn" onclick="selectSlot('09:00')">Matin (09h00)</button>
+                                    <button type="button" class="slot-btn" onclick="selectSlot('14:00')">Après-midi (14h00)</button>
+                                </div>
                                 <div class="field-error">Choisissez un créneau.</div>
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="clientNotes">Remarque (facultatif)</label>
-                            <textarea id="clientNotes" class="form-control" placeholder="Longueur actuelle, photo d'inspiration, questions…"></textarea>
+                            <label for="clientNotes">Précisions supplémentaires (facultatif)</label>
+                            <textarea id="clientNotes" class="form-control" placeholder="Détails sur la longueur de vos cheveux, type deLocks..."></textarea>
                         </div>
-                        <button type="submit" id="bookingSubmit" class="btn-primary" style="width: 100%;">Confirmer la réservation</button>
+
+                        <button type="submit" id="bookingSubmit" class="btn-primary" style="width: 100%;">
+                            📲 Envoyer la demande sur WhatsApp
+                        </button>
                     </form>
                 </div>
             </div>
         </section>
-
-        <!-- 4. ESPACE INTERNE SALON (PROTÉGÉ) -->
-        <section id="admin" class="section">
-            <div class="admin-head">
-                <div>
-                    <span class="eyebrow">🔐 Espace interne</span>
-                    <h2 class="section-title">Fiches clients <em>&</em> RDV</h2>
-                    <p class="section-lead">Gestion réservée à l'équipe du salon.</p>
-                </div>
-                <button class="btn-danger" onclick="lockAdmin()">Verrouiller / Quitter</button>
-            </div>
-
-            <div id="adminStats" class="stats"></div>
-
-            <div class="toolbar">
-                <input type="search" id="adminSearch" class="form-control" placeholder="🔍 Rechercher un client…" oninput="renderAdminTable()">
-                <div id="statusFilters" class="filters" style="margin-top: 0;"></div>
-            </div>
-
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Client</th>
-                            <th>Prestation</th>
-                            <th>Date RDV</th>
-                            <th>Statut</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id="clientsTableBody">
-                        <!-- Données injectées dynamiquement -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
     </main>
 
     <footer>
         <div class="footer-inner">
             <div>
-                <div class="logo" style="margin-bottom: 1rem;"><span class="logo-mark">🌿</span>Dread <em>&</em> Lock Master</div>
-                <p>Salon spécialisé dreadlocks : création, entretien, réparation et extensions naturelles.</p>
+                <div class="logo" style="margin-bottom: 1rem;"><span class="logo-mark">🌿</span>Dreadlocks <em>Dakar</em></div>
+                <p>Service professionnel de création, entretien et soins de dreadlocks exclusivement à domicile sur Dakar.</p>
             </div>
             <div>
-                <h4>Horaires</h4>
-                <ul id="footerHours"></ul>
+                <h4>Horaires d'intervention</h4>
+                <p>Lundi – Dimanche : 09h00 – 19h00</p>
             </div>
             <div>
-                <h4>Contact</h4>
-                <p>12 rue des Artisans<br>Casablanca<br>06 00 00 00 00</p>
+                <h4>Contact Direct</h4>
+                <p>📱 +221 78 459 22 49</p>
+                <p>📍 Déplacements sur tout Dakar</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>© <span id="year"></span> Dread & Lock Master</span>
-            <span>Fait avec soin 🌿</span>
+            <span>© 2026 Dreadlocks Dakar — Service à Domicile</span>
+            <span>Open Source & Sur-Mesure 🌿</span>
         </div>
     </footer>
 
-    <!-- MODAL PIN INTERNE -->
-    <div id="pinModal" class="modal" onclick="if (event.target === this) closePinModal()">
-        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="pinTitle">
-            <div class="lock">🔒</div>
-            <h3 id="pinTitle">Accès réservé au salon</h3>
-            <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem;">Entrez le code PIN interne :</p>
-            <input type="password" id="pinInput" class="form-control" inputmode="numeric" maxlength="8" placeholder="• • • •" style="text-align: center; letter-spacing: 8px; font-size: 1.3rem; margin-bottom: 1rem;">
-            <button class="btn-primary" style="width: 100%;" onclick="verifyPin()">Valider</button>
-            <div id="pinError" class="alert-error">Code PIN incorrect !</div>
-            <button class="link-btn" onclick="closePinModal()">Annuler</button>
-        </div>
-    </div>
-
-    <div id="toasts" class="toast-container" aria-live="polite"></div>
-
     <script src="script.js"></script>
-
 </body>
 </html>
